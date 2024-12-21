@@ -34,7 +34,7 @@ class CustomAuthFooter extends StatelessWidget {
             txtBtnTitle,
             style: GoogleFonts.montserrat(
               fontWeight: FontWeight.w700,
-              color: AppColors.secondaryColor,
+              color: AppColors.primaryColor,
               fontSize: 16,
             ),
           ),

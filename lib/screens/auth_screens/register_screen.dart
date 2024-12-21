@@ -3,6 +3,7 @@ import 'package:ar_app/screens/auth_screens/login_screen.dart';
 import 'package:ar_app/screens/bottom_nav_bar.dart';
 import 'package:ar_app/widgets/btns/custom_auth_title_sub_title.dart';
 import 'package:ar_app/widgets/btns/custom_filled_btn.dart';
+import 'package:ar_app/widgets/btns/custom_neo_pop_btn.dart';
 import 'package:ar_app/widgets/btns/custom_outlined_btn.dart';
 import 'package:ar_app/widgets/custom_auth_footer.dart';
 import 'package:ar_app/widgets/text_fields/custom_password_text_field.dart';
@@ -67,44 +68,12 @@ class RegisterScreen extends StatelessWidget {
                 hintText: "Enter password",
               ),
 
-              const Spacer(
-                flex: 1,
+              const SizedBox(
+                height: 50,
               ),
 
               /// sign up btn
-              CustomFilledBtn(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return BottomNavBar();
-                    },
-                  ));
-                },
-                btnTitle: "Sign Up",
-              ),
-
-              const SizedBox(
-                height: 40,
-              ),
-
-              /// sign in with google btn
-              CustomOutlinedBtn(
-                iconName: "google-icon",
-                onTap: () {},
-                btnTitle: "Sign Up with Google",
-              ),
-
-              const SizedBox(
-                height: 20,
-              ),
-
-              /// sign in with apple
-              CustomOutlinedBtn(
-                iconName: "apple-icon",
-                onTap: () {},
-                btnTitle: "Sign Up with Apple",
-                iconColor: AppColors.appleIconColor,
-              ),
+              CustomNeoPopBtn(onTap: () {}, btnTitle: "Sign Up"),
 
               const Spacer(
                 flex: 1,

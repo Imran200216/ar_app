@@ -1,10 +1,8 @@
-
 import 'package:ar_app/constants/colors.dart';
 import 'package:ar_app/screens/auth_screens/forget_password_screen.dart';
 import 'package:ar_app/screens/auth_screens/register_screen.dart';
 import 'package:ar_app/widgets/btns/custom_auth_title_sub_title.dart';
-import 'package:ar_app/widgets/btns/custom_filled_btn.dart';
-import 'package:ar_app/widgets/btns/custom_outlined_btn.dart';
+import 'package:ar_app/widgets/btns/custom_neo_pop_btn.dart';
 import 'package:ar_app/widgets/custom_auth_footer.dart';
 import 'package:ar_app/widgets/text_fields/custom_password_text_field.dart';
 import 'package:ar_app/widgets/text_fields/custom_text_field.dart';
@@ -82,34 +80,8 @@ class LoginScreen extends StatelessWidget {
                 height: 40,
               ),
 
-              /// login in btn
-              CustomFilledBtn(
-                onTap: () {},
-                btnTitle: "Log In",
-              ),
-
-              const SizedBox(
-                height: 40,
-              ),
-
-              /// login in with google btn
-              CustomOutlinedBtn(
-                iconName: "google-icon",
-                onTap: () {},
-                btnTitle: "Login In with Google",
-              ),
-
-              const SizedBox(
-                height: 20,
-              ),
-
-              /// login in with apple
-              CustomOutlinedBtn(
-                iconName: "apple-icon",
-                onTap: () {},
-                btnTitle: "Login In with Apple",
-                iconColor: AppColors.appleIconColor,
-              ),
+              /// login btn
+              CustomNeoPopBtn(onTap: () {}, btnTitle: "Login"),
 
               const Spacer(
                 flex: 1,
