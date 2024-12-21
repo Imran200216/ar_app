@@ -73,7 +73,14 @@ class RegisterScreen extends StatelessWidget {
               ),
 
               /// sign up btn
-              CustomNeoPopBtn(onTap: () {}, btnTitle: "Sign Up"),
+              CustomNeoPopBtn(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return BottomNavBar();
+                    }));
+                  },
+                  btnTitle: "Sign Up"),
 
               const Spacer(
                 flex: 1,

@@ -55,7 +55,7 @@ class BottomNavBar extends StatelessWidget {
                   onTap: (index) {
                     bottomNavProvider.setIndex(index);
                   },
-                  backgroundColor: AppColors.bottomNavBarBgColor,
+                  backgroundColor: AppColors.secondaryColor,
                   currentIndex: bottomNavProvider.currentIndex,
                   selectedItemColor:
                       AppColors.bottomNavBarItemIconSelectedColor,
@@ -76,7 +76,7 @@ class BottomNavBar extends StatelessWidget {
                   items: <BottomNavigationBarItem>[
                     BottomNavigationBarItem(
                       icon: SvgPicture.asset(
-                        'assets/icon/bottom-nav-icons/home-icon.svg',
+                        'assets/icons/bottom-nav-icons/home-icon.svg',
                         color: bottomNavProvider.currentIndex == 0
                             ? AppColors.bottomNavBarItemIconSelectedColor
                             : AppColors.bottomNavBarItemIconUnSelectedColor,
@@ -87,7 +87,7 @@ class BottomNavBar extends StatelessWidget {
                     ),
                     BottomNavigationBarItem(
                       icon: SvgPicture.asset(
-                        'assets/icon/bottom-nav-icons/favorite-icon.svg',
+                        'assets/icons/bottom-nav-icons/favorite-icon.svg',
                         color: bottomNavProvider.currentIndex == 1
                             ? AppColors.bottomNavBarItemIconSelectedColor
                             : AppColors.bottomNavBarItemIconUnSelectedColor,
@@ -98,7 +98,7 @@ class BottomNavBar extends StatelessWidget {
                     ),
                     BottomNavigationBarItem(
                       icon: SvgPicture.asset(
-                        'assets/icon/bottom-nav-icons/profile-icon.svg',
+                        'assets/icons/bottom-nav-icons/profile-icon.svg',
                         color: bottomNavProvider.currentIndex == 2
                             ? AppColors.bottomNavBarItemIconSelectedColor
                             : AppColors.bottomNavBarItemIconUnSelectedColor,
