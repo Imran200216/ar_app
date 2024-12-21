@@ -44,8 +44,6 @@ dependencies:
   provider:
   # tap to exit
   double_tap_to_exit: ^1.0.2
-  # dot env
-  flutter_dotenv: ^5.2.1
   # cool btn
   neopop: ^1.0.2
   # network image
@@ -54,6 +52,8 @@ dependencies:
   model_viewer_plus: ^1.9.1
   # native splash
   flutter_native_splash: ^2.4.3
+  # marque
+  marquee: ^2.3.0
 
 dev_dependencies:
   flutter_test:

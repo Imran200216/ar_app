@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
         placeImageUrl:
             "https://imgs.search.brave.com/G34YfmwwL2YnzHVMWsEkobIAeJELt0-Ib4mPARbo64s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jYXRo/b2xpY3NocmluZWJh/c2lsaWNhLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvU2FudGhv/bWUtQ2F0aGVkcmFs/LUJhc2lsaWNhLUNo/ZW5uYWktMS53ZWJw",
         placeName: "Santhome Church",
-        placeModalUrl: "https://example.com/modal/santhome-church",
+        placeModalUrl: "assets/3d-models/chruch.glb",
         placeDescription:
             "A historic basilica built in the 16th century over the tomb of St. Thomas, one of Jesus's apostles.",
         placeLinkLocation: "https://www.google.com/maps?q=Santhome+Church",

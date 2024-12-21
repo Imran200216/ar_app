@@ -5,6 +5,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ar_app/modals/places_modals.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:marquee/marquee.dart';
 
 class DescriptionScreen extends StatelessWidget {
   final ChennaiPlaces place;
@@ -14,6 +15,29 @@ class DescriptionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomSheet: Container(
+        height: 30,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.zero,
+        ),
+        child: Center(
+          child: Marquee(
+            text: 'Namma Flutter Namma Chennai',
+            style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+            scrollAxis: Axis.horizontal,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            blankSpace: 20.0,
+            velocity: 100.0,
+            pauseAfterRound: Duration(seconds: 1),
+            startPadding: 10.0,
+            accelerationDuration: Duration(seconds: 1),
+            accelerationCurve: Curves.linear,
+            decelerationDuration: Duration(milliseconds: 500),
+            decelerationCurve: Curves.easeOut,
+          ),
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: AppColors.primaryColor,
         leading: IconButton(
@@ -69,9 +93,12 @@ class DescriptionScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   InkWell(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return ArScreen(modalPath: place.placeModalUrl,);
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return ArScreen(
+                          modalPath: place.placeModalUrl,
+                        );
                       }));
                     },
                     child: Container(
