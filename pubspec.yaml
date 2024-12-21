@@ -50,6 +50,10 @@ dependencies:
   neopop: ^1.0.2
   # network image
   cached_network_image:
+  # 3d modals
+  model_viewer_plus: ^1.9.1
+  # native splash
+  flutter_native_splash: ^2.4.3
 
 dev_dependencies:
   flutter_test:
@@ -78,6 +82,8 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/icons/bottom-nav-icons/
+    - assets/3d-modals/
+    - assets/images/splash/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

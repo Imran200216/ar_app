@@ -4,7 +4,7 @@ class AppColors {
 
   /// app scaffold bg color and safe area color
   static const Color scaffoldBackgroundColor = Color(0xFF141415);
-  static const Color safeAreaColor = Color(0xFF141415);
+  static const Color safeAreaColor = Color(0xFF53C5F8);
 
   /// app main colors
   static const Color primaryColor = Color(0xFF53C5F8);
